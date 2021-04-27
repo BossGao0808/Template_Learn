@@ -9,6 +9,12 @@ c++模板的意义：
 */
 using namespace std;
 
+
+//模板类测试01
+/*
+
+//模板类测试01 star
+
 template<class T>
 class FVector
 {
@@ -26,3 +32,65 @@ private:
 	T* Data;
 
 };
+
+//模板类测试01 end
+
+*/
+
+
+//函数模板的范例 
+/*
+//函数模板的范例 star
+template<typename T>
+T Max(T a, T b)
+{
+	return a < b ? b : a;
+}
+
+template <typename T>
+inline T const& Max2(T const& a, T const& b)
+{
+	return a < b ? b : a;
+}
+//函数模板的范例 end
+
+*/
+
+
+//模板类测试02 模板的匹配
+/*
+//模板的匹配 star
+class FTest				//用于测试的被调用的类
+{
+public:
+	int FWork()			//只有该类中有模板类调用的函数才能成功
+	{
+		
+		cout <<"调用成功"<< endl;
+		
+		return 0;
+	}
+};
+
+
+
+template<class T>
+class FVector
+{
+public:
+
+
+	void FHellow()
+	{
+		T Data;					//声明一个之后要调用的位置类
+		Data.FWork();		//调用该未知类内的方法，只有调用的类有该函数才能成功
+	}
+
+
+private:
+	T* Data;
+
+};
+
+//模板的匹配 end
+*/
