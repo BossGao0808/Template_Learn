@@ -67,8 +67,15 @@ int main()
 	//模板类的匹配 end
 	*/
 
+	//模板类测试03 模板类的继承
+	/*
+	//模板类的继承 Star
 
+	FTest1 Test1;
+	Test1.Hello();
 
+	//模板类的继承 End
+	*/
 
 	cout << "请按任意键..." << endl;
 	cin.get();

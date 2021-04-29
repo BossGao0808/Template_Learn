@@ -1,4 +1,6 @@
 #pragma once
+#include<iostream>
+
 //用于学习模板的工程文件及笔记
 
 /*
@@ -94,3 +96,46 @@ private:
 
 //模板的匹配 end
 */
+
+
+//模板类测试03 模板类的继承
+	/*
+	//模板类的继承 Star
+template<class T>
+class FHello
+{
+public:
+	void Hello()
+	{
+		cout << "Run FHello.Hello" << endl;//模板类的继承 函数的实现要放在.h文件内实现
+	}
+private:
+
+};
+
+class FTest
+{
+public:
+	void Hello_00(){}
+
+};
+
+void FTest::Hello_00()
+{
+	cout << "Run FTest.Hello_00" << endl;
+}
+
+
+class FTest1:public FHello<FTest>
+{
+public:
+
+	void Hello_01()
+	{
+		cout << "Run FTest1.Hello_01" << endl;
+	};
+	 
+}
+
+	//模板类的继承 End
+	*/
